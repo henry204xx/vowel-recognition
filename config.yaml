@@ -1,0 +1,23 @@
+data:
+  directory: data
+  vowels: [a, i, u, e, o]
+  training_speakers: [S01, S02, S03, S04, S05]
+  open_test_speakers: []
+results:
+  dir: results
+audio:
+  sample_rate: 16000
+  normalize: true
+  trim_silence: true
+  silence_threshold: 0.02
+mfcc:
+  numcep: 13
+  winlen: 0.025
+  winstep: 0.01
+dtw:
+  normalize: length
+gaussian:
+  regularization: 0.001
+cache_features: true
+random_seed: 42
+generate_plots: true

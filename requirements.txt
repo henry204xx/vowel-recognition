@@ -1,0 +1,8 @@
+numpy
+scipy
+soundfile
+python_speech_features
+pandas
+matplotlib
+pytest
+pyyaml

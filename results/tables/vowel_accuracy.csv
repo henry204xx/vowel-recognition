@@ -1,0 +1,6 @@
+Vowel,DTW Closed Recording (%),DTW Closed Speakers (%),DTW Open Speakers (%),Gaussian Closed Recording (%),Gaussian Closed Speakers (%),Gaussian Open Speakers (%)
+a,100.0,100.0,93.75,100.0,100.0,93.75
+i,100.0,100.0,100.0,100.0,80.0,87.5
+u,100.0,60.0,93.75,100.0,60.0,37.5
+e,100.0,100.0,81.25,100.0,100.0,68.75
+o,100.0,60.0,56.25,100.0,80.0,68.75

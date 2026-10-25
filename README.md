@@ -1,28 +1,22 @@
-# Pengenalan Vowel Bahasa Indonesia dengan DTW dan Model Gaussian
+# Indonesian Vowel Recognition with DTW and Gaussian Models
 
-Proyek praktikum untuk mengenali `/a/`, `/i/`, `/u/`, `/e/`, dan `/o/` menggunakan template DTW dan Gaussian multivariat berbasis MFCC.
+A pipeline to recognize `/a/`, `/i/`, `/u/`, `/e/`, and `/o/` using DTW templates and MFCC-based multivariate Gaussian models.
 
-## Instalasi
+## Installation
 
-Gunakan Python 3.10+.
+Use Python 3.10+.
 
 ```bash
 pip install -r requirements.txt
 pip install -e .
 ```
 
-## Struktur data
+## Data Structure
 
-Simpan rekaman langsung di `data/S01/a/train.wav` dan `data/S01/a/test.wav`, diulang untuk semua vokal dan pembicara. Konfigurasi pembicara berada di [config.yaml](config.yaml). Cache fitur (bila diaktifkan) disimpan di `results/feature_cache`, terpisah dari data rekaman.
+Store recordings directly in `data/S01/a/train.wav` and `data/S01/a/test.wav`, for all vowels and speakers. Speaker configurations are located in [config.yaml](https://www.google.com/search?q=config.yaml).
 
-## Menjalankan lewat notebook
+## Running via Notebook
 
-Buka [vowel_recognition_pipeline.ipynb](vowel_recognition_pipeline.ipynb) di VS Code atau Jupyter, lalu jalankan sel dari atas ke bawah. Notebook memvalidasi data, memperlihatkan contoh prapemrosesan/MFCC, menjalankan kedua sistem, menampilkan hasil, dan menyimpannya ke `results/`; skrip peluncur terpisah tidak diperlukan.
+Open [vowel_recognition_pipeline.ipynb](https://www.google.com/search?q=vowel_recognition_pipeline.ipynb) in VS Code or Jupyter, then run each cell.
 
-## Pengujian kode
-
-```bash
-pytest
-```
-
-Hasil CSV/JSON berada di `results/tables` dan `results`, sedangkan grafik berada di `results/figures`. Evaluasi *open speaker* hanya tersedia bila pembicara mandiri dikonfigurasi dan rekamannya ada; nilai tidak akan dibuat-buat.
+CSV/JSON results are located in `results/tables` and `results`, and charts are in `results/figures`.
